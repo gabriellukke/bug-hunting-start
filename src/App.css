@@ -1,3 +1,39 @@
-.App {
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.invoice-container, table {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px;
+  min-width: 80%;
   text-align: center;
+  width: 50%;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 50px;
+}
+
+article, header {
+  align-items: center;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+p, img, h2, th, td {
+  padding: 0 10px;
+}
+
+form, fieldset {
+  display: flex;
 }

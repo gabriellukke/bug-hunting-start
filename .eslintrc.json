@@ -268,12 +268,6 @@
     "react/jsx-no-useless-fragment": [
       "error"
     ],
-    "react/jsx-curly-spacing": [
-      "error",
-      {
-        "when": "always"
-      }
-    ],
     "react/jsx-equals-spacing": [
       "error",
       "never"
