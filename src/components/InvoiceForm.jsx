@@ -13,7 +13,7 @@ class InvoiceForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleClick.bind(this);
   }
 
   handleChange({ target: { name, value } }) {
@@ -40,7 +40,7 @@ class InvoiceForm extends React.Component {
             <input
               type="text"
               id="name"
-              name="name"
+              name="nome"
               value={name}
               onChange={handleCustomerChange}
             />
@@ -121,7 +121,7 @@ class InvoiceForm extends React.Component {
           </label>
           <button
             type="submit"
-            onClick={(e) => addItem(e, this.state)}
+            onClick={addItem(this.state)}
           >
             Add Product
           </button>

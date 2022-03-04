@@ -25,8 +25,7 @@ class App extends React.Component {
     this.setState({ [name]: value });
   }
 
-  addItem(e, item) {
-    e.preventDefault();
+  addItem(item) {
     this.setState((prevState) => ({ invoiceItems: [...prevState.invoiceItems, item] }));
   }
 

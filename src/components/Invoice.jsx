@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes, { shape } from 'prop-types';
 
-class Invoice extends React.Component {
+class Invoice extends React.Component() {
   render() {
     const { name, email, address, city, invoiceItems } = this.props;
     return (
@@ -58,7 +58,7 @@ class Invoice extends React.Component {
 
 export default Invoice;
 
-Invoice.propTypes = {
+Invoice.PropTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
